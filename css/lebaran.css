@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(215, 161, 90);
+}
+
+@font-face {
+    font-family: 'highbright';
+    src: url("../font/Highbright.ttf") format('truetype');
+}
+
+.text-highbright {
+    font-family: 'highbright';
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'calistoga';
+    src: url("../font/Calistoga-Regular.ttf") format('truetype');
+}
+
+.text-calistoga {
+    font-family: 'calistoga';
+    font-weight: 200;
+}
+
+@keyframes muter {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.animasi-muter{
+    animation: muter 8s linear infinite;
+}
+
+.animasi-muter1{
+    animation: muter 4s linear infinite;
+}
+.animasi-muter2{
+    animation: muter 10s linear infinite;
+}
+@keyframes rotate-kanan {
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(-5deg);
+    }
+    66%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+.kanan{
+    animation: rotate-kanan 5s linear infinite;
+}
+.kanan1{
+    animation: rotate-kanan 6s linear infinite;
+}
+@keyframes rotate-kiri {
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(5deg);
+    }
+    66%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+
+
+}
+
+.svg-color{
+    filter: invert(20%) sepia(86%) saturate(636%) hue-rotate(313deg) brightness(90%) contrast(82%);
+}
+
+.kiri{
+    animation: rotate-kiri 6s linear infinite;
+}
+
+.kiri1{
+    animation: rotate-kiri 7s linear infinite;
+}
+
+.custom-shape-divider-bottom-1681997164 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1681997164 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 76px;
+}
+
+.custom-shape-divider-bottom-1681997164 .shape-fill {
+    fill: #EAE2E2;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1681997164 svg {
+        width: calc(150% + 1.3px);
+        height: 58px;
+    }
+}
